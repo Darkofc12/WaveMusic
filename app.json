@@ -1,0 +1,57 @@
+{
+	"name": "WaveMusic",
+	"description": "TEAM EX-BOT-Z",
+	"keywords": [
+		"whatsapp",
+		"bot"
+	],
+	"repository": "https://github.com/Darkofc12/WaveMusic",
+	"stack": "container",
+    "env": { 
+	    "TOKEN": {
+            "description": "use your mongo db uri",
+            "required": true,
+            "value":""
+        },
+        "PREFIX": {
+            "description": "Prefix of commands. Can be also false",
+            "required": true,
+            "value":"/"
+        },
+        "OWNERID": {
+            "description": "AUTO STATUS READER",
+            "required": false,
+            "value":"1153172663838195724"
+        },
+        "SPOTIFYID": {
+            "description": "Type true to on mention type false to off mention",
+            "required": true,
+            "value":"cb41529dc3bd4d8f8a240dbee0fff4e8"
+        },
+      "SPOTIFYSECRET": {
+            "description": "Enter your mention data here",
+            "required": false,
+            "value":"bcca82f42930498aa385a8289fdf276b"
+        },
+        "MONGO_URI": {
+            "description": "Name of stickers created using bot. Can also split using ;",
+            "required": true,
+            "value":"mongodb+srv://aromaxdev:diwasatreya@youtube.rn0v74r.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "COlOR": {
+            "description": "Name, image, owner and other details in menu (seperate with comma)",
+            "required": true,
+            "value":"#2B2928"
+        },
+       "LOGS": {
+            "description": "Your MD session",
+            "required": true
+             
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ]
+  }
