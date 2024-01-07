@@ -18,8 +18,8 @@ module.exports = {
 
   nodes: [
     {
-      url: process.env.NODE_URL || 'lavalink.lexnet.cc:443',
-      name: process.env.NODE_NAME || 'lavalink.lexnet.cc',
+      url: process.env.NODE_URL || 'oce-lavalink.lexnet.cc:443',
+      name: process.env.NODE_NAME || 'oce-lavalink.lexnet.cc',
       auth: process.env.NODE_AUTH || 'lexn3tl@val!nk',
       secure: parseBoolean(process.env.NODE_SECURE || 'true'),
     },
